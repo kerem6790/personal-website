@@ -1,0 +1,220 @@
+/* Genel Stiller */
+html {
+    /* scroll-behavior: smooth; kaldırıldı */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff; /* Açık tema - Beyaz arka plan */
+    color: #007bff; /* Vurgu rengi */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* İki Sütunlu Düzen */
+.layout-container {
+    display: flex;
+    max-width: 1100px; /* Toplam genişlik biraz artırıldı */
+    margin: 40px auto; /* Üst/alt boşluk ve ortalama */
+    padding: 0 20px; /* Kenar boşlukları */
+}
+
+/* Kenar Çubuğu (Sidebar) */
+.sidebar {
+    flex: 0 0 200px; /* Sabit genişlik, büyümez/küçülmez */
+    padding-right: 40px;
+    /* Position: sticky; veya fixed; eklenebilir, şimdilik basit tutalım */
+}
+
+.sidebar h1 {
+    font-size: 1.8em; /* Başlık boyutu ayarlandı */
+    margin-top: 0; /* Üstteki gereksiz boşluk kaldırıldı */
+    margin-bottom: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar nav li {
+    margin-bottom: 10px;
+}
+
+.sidebar nav a {
+    text-decoration: none;
+    color: #555555; /* Biraz daha soluk link rengi */
+    font-size: 1em;
+    transition: color 0.2s ease;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a:focus { /* Klavye ile gezinme için focus eklendi */
+    color: #007bff; /* Vurgu rengi */
+}
+
+/* Aktif sayfa linkini belirtme */
+.sidebar nav a.active {
+    color: #333333; /* Normal metin rengi */
+    font-weight: 700; /* Kalın font */
+    cursor: default; /* Tıklanamaz olduğunu belirtir */
+}
+
+/* Ana İçerik Alanı */
+.main-content {
+    flex: 1; /* Kalan alanı doldurur */
+    min-width: 0; /* flex item'ların taşmasını önlemek için */
+    margin-top: 0; /* Section'ın üst boşluğu yeterli */
+}
+
+/* Bölüm Stilleri (Ana içerik içinde) */
+.main-content section {
+    margin-bottom: 60px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease-out forwards;
+    text-align: left; /* Bölüm içerikleri sola hizalandı */
+}
+
+.main-content section h2 {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eeeeee;
+    display: inline-block;
+    text-align: left; /* Başlıklar sola hizalandı */
+}
+
+/* Animasyon Gecikmeleri kaldırıldı */
+/* section#about { animation-delay: 0.2s; } */
+/* section#projects { animation-delay: 0.4s; } */
+/* section#blogs { animation-delay: 0.6s; } */
+/* section#contact { animation-delay: 0.8s; } */
+
+/* Proje ve Blog Kartları */
+.project,
+.blog-post {
+    margin-bottom: 30px; /* Alt boşluk biraz artırıldı */
+    text-align: left;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.project h3,
+.blog-post h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* İletişim ve Sosyal Linkler (Ana içerik içinde) */
+#contact p {
+    margin-bottom: 20px;
+    text-align: left; /* İletişim metni sola hizalandı */
+}
+
+.social-links {
+    text-align: left; /* İkonlar sola hizalandı */
+}
+
+.social-links a {
+    color: #333333;
+    margin-right: 15px; /* Sadece sağ boşluk */
+    margin-left: 0;
+    font-size: 1.8em;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    color: #007bff;
+    transform: scale(1.1);
+}
+
+/* Footer (Ana içerik içinde) */
+.main-content footer {
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #777777;
+    padding-top: 20px;
+    border-top: 1px solid #eeeeee;
+    text-align: left; /* Footer metni sola hizalandı */
+}
+
+/* Keyframes Animasyonu (Aynı kalabilir) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobil Duyarlılık */
+@media (max-width: 768px) {
+    .layout-container {
+        flex-direction: column; /* Sütunları alt alta getir */
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+
+    .sidebar {
+        flex: 0 0 auto; /* Genişlik otomatik ayarlanır */
+        width: 100%;
+        padding-right: 0;
+        text-align: center; /* Kenar çubuğunu ortala */
+        margin-bottom: 30px; /* Ana içerikle arasına boşluk */
+    }
+
+    .sidebar h1 {
+        font-size: 1.6em;
+        margin-bottom: 20px;
+    }
+
+    .sidebar nav ul {
+        /* İsteğe bağlı: Linkleri yan yana getirme */
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        /* justify-content: center; */
+    }
+
+    .sidebar nav li {
+        margin-bottom: 8px;
+        /* display: inline-block; */ /* Yan yana için */
+        /* margin: 0 10px; */      /* Yan yana için */
+    }
+
+    .main-content section,
+    .main-content section h2,
+    .project,
+    .blog-post,
+    #contact p,
+    .social-links,
+    .main-content footer {
+        text-align: center; /* Mobil görünümde içerikleri ortala */
+    }
+
+    .social-links a {
+        margin: 0 10px; /* Mobilde ikonları ortala */
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar h1 {
+        font-size: 1.5em;
+    }
+    .main-content section h2 {
+        font-size: 1.4em;
+    }
+    .social-links a {
+        font-size: 1.6em;
+    }
+} 
