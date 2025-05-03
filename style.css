@@ -251,4 +251,34 @@ hr {
     .social-links a {
         font-size: 1.03em; /* %10 azalma (1.14em -> 1.03em) */
     }
+}
+
+/* Dil Değiştirici */
+.lang-switch {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    display: flex;
+    gap: 5px;
+    font-size: 0.9em;
+}
+
+.lang-switch a {
+    padding: 5px 8px;
+    text-decoration: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+
+.lang-switch a.active {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    color: #111111;
+    cursor: default;
+}
+
+.lang-switch a:hover:not(.active) {
+    background-color: #f9f9f9;
+    text-decoration: none;
 } 
