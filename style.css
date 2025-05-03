@@ -4,13 +4,13 @@ html {
 }
 
 body {
-    font-family: 'Libre Baskerville', serif; /* Font değişti */
+    font-family: 'Libre Baskerville', serif;
     background-color: #ffffff;
-    color: #111111; /* Ana metin rengi */
+    color: #111111;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    font-size: 20px; /* ~%20 artış (17px -> 20px) */
+    font-size: 18px; /* %10 azalma (20px -> 18px) */
 }
 
 /* Link Stilleri */
@@ -29,23 +29,23 @@ a:focus {
 /* İki Sütunlu Düzen */
 .layout-container {
     display: flex;
-    max-width: 1150px; /* ~%20 artış (960px -> 1150px) */
-    margin: 48px auto; /* ~%20 artış (40px -> 48px) */
-    padding: 0 48px; /* ~%20 artış (40px -> 48px) */
+    max-width: 1035px; /* %10 azalma (1150px -> 1035px) */
+    margin: 43px auto; /* %10 azalma (48px -> 43px) */
+    padding: 0 43px; /* %10 azalma (48px -> 43px) */
 }
 
 /* Kenar Çubuğu (Sidebar) */
 .sidebar {
-    flex: 0 0 215px; /* ~%20 artış (180px -> 215px) */
-    padding-right: 48px; /* ~%20 artış (40px -> 48px) */
-    padding-top: 6px; /* ~%20 artış (5px -> 6px) */
+    flex: 0 0 195px; /* %10 azalma (215px -> 195px) */
+    padding-right: 43px; /* %10 azalma (48px -> 43px) */
+    padding-top: 5px; /* %10 azalma (6px -> 5px) */
 }
 
 .sidebar h1 {
-    font-family: 'Libre Baskerville', serif; /* Font değişti */
-    font-size: 1.9em; /* ~%20 artış (1.6em -> 1.9em) */
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.7em; /* %10 azalma (1.9em -> 1.7em) */
     margin-top: 0;
-    margin-bottom: 48px; /* ~%20 artış (40px -> 48px) */
+    margin-bottom: 43px; /* %10 azalma (48px -> 43px) */
     font-weight: 700;
     line-height: 1.3;
     color: #222222;
@@ -58,7 +58,7 @@ a:focus {
 }
 
 .sidebar nav li {
-    margin-bottom: 14px; /* ~%20 artış (12px -> 14px) */
+    margin-bottom: 13px; /* %10 azalma (14px -> 13px) */
 }
 
 .sidebar nav a {
@@ -90,20 +90,20 @@ a:focus {
 .main-content {
     flex: 1;
     min-width: 0;
-    padding-top: 6px; /* ~%20 artış (5px -> 6px) */
+    padding-top: 5px; /* %10 azalma (6px -> 5px) */
 }
 
 /* Bölüm Stilleri (Ana içerik içinde) */
 .main-content section {
-    margin-bottom: 48px; /* ~%20 artış (40px -> 48px) */
+    margin-bottom: 43px; /* %10 azalma (48px -> 43px) */
     opacity: 1;
     transform: none;
     text-align: left;
 }
 
 .main-content section h2 {
-    font-size: 1.6em; /* ~%20 artış (1.33em -> 1.6em) */
-    margin-bottom: 24px; /* ~%20 artış (20px -> 24px) */
+    font-size: 1.45em; /* %10 azalma (1.6em -> 1.45em) */
+    margin-bottom: 22px; /* %10 azalma (24px -> 22px) */
     padding-bottom: 0;
     border-bottom: none;
     display: block;
@@ -116,7 +116,7 @@ a:focus {
 /* Proje ve Blog Kartları */
 .project,
 .blog-post {
-    margin-bottom: 30px; /* ~%20 artış (25px -> 30px) */
+    margin-bottom: 27px; /* %10 azalma (30px -> 27px) */
     text-align: left;
     padding: 0;
     border-radius: 0;
@@ -125,16 +125,16 @@ a:focus {
 
 .project h3,
 .blog-post h3 {
-    font-size: 1.32em; /* ~%20 artış (1.1em -> 1.32em) */
+    font-size: 1.19em; /* %10 azalma (1.32em -> 1.19em) */
     font-weight: 700;
     color: #222222;
     margin-top: 0;
-    margin-bottom: 10px; /* ~%20 artış (8px -> 10px) */
+    margin-bottom: 9px; /* %10 azalma (10px -> 9px) */
 }
 
 /* İletişim ve Sosyal Linkler (Ana içerik içinde) */
 #contact p {
-    margin-bottom: 18px; /* ~%20 artış (15px -> 18px) */
+    margin-bottom: 16px; /* %10 azalma (18px -> 16px) */
 }
 
 .social-links {
@@ -143,7 +143,7 @@ a:focus {
 
 .social-links a {
     /* color: #333333; */ /* Genel a stilinden gelecek */
-    margin-right: 18px; /* ~%20 artış (15px -> 18px) */
+    margin-right: 16px; /* %10 azalma (18px -> 16px) */
     margin-left: 0;
     font-size: 1em;
     /* text-decoration: none; */ /* Genel a stilinde var */
@@ -161,15 +161,15 @@ hr {
     border: 0;
     height: 1px;
     background-color: #e0e0e0;
-    margin: 48px 0; /* ~%20 artış (40px -> 48px) */
+    margin: 43px 0; /* %10 azalma (48px -> 43px) */
 }
 
 /* Footer (Ana içerik içinde) */
 .main-content footer {
-    margin-top: 48px; /* ~%20 artış (40px -> 48px) */
+    margin-top: 43px; /* %10 azalma (48px -> 43px) */
     font-size: 0.9em;
     color: #888888;
-    padding-top: 24px; /* ~%20 artış (20px -> 24px) */
+    padding-top: 22px; /* %10 azalma (24px -> 22px) */
     border-top: 1px solid #e0e0e0;
     text-align: left;
 }
@@ -181,8 +181,8 @@ hr {
 @media (max-width: 768px) {
     .layout-container {
         flex-direction: column;
-        margin: 24px auto; /* ~%20 artış (20px -> 24px) */
-        padding: 0 30px; /* ~%20 artış (25px -> 30px) */
+        margin: 22px auto; /* %10 azalma (24px -> 22px) */
+        padding: 0 27px; /* %10 azalma (30px -> 27px) */
     }
 
     .sidebar {
@@ -190,13 +190,13 @@ hr {
         width: 100%;
         padding-right: 0;
         text-align: left;
-        margin-bottom: 36px; /* ~%20 artış (30px -> 36px) */
+        margin-bottom: 32px; /* %10 azalma (36px -> 32px) */
         padding-top: 0;
     }
 
     .sidebar h1 {
-        font-size: 1.8em; /* ~%20 artış (1.5em -> 1.8em) */
-        margin-bottom: 30px; /* ~%20 artış (25px -> 30px) */
+        font-size: 1.6em; /* %10 azalma (1.8em -> 1.6em) */
+        margin-bottom: 27px; /* %10 azalma (30px -> 27px) */
     }
 
     .sidebar nav ul {
@@ -204,7 +204,7 @@ hr {
     }
 
     .sidebar nav li {
-        margin-bottom: 12px; /* ~%20 artış (10px -> 12px) */
+        margin-bottom: 11px; /* %10 azalma (12px -> 11px) */
     }
 
     .main-content {
@@ -222,33 +222,33 @@ hr {
     }
 
     .social-links a {
-        margin-right: 14px; /* ~%20 artış (12px -> 14px) */
-        margin-bottom: 6px; /* ~%20 artış (5px -> 6px) */
+        margin-right: 13px; /* %10 azalma (14px -> 13px) */
+        margin-bottom: 5px; /* %10 azalma (6px -> 5px) */
     }
 
     hr {
-        margin: 36px 0; /* ~%20 artış (30px -> 36px) */
+        margin: 32px 0; /* %10 azalma (36px -> 32px) */
     }
 }
 
 @media (max-width: 480px) {
     body {
-        font-size: 19px; /* ~%20 artış (16px -> 19px) */
+        font-size: 17px; /* %10 azalma (19px -> 17px) */
     }
     .layout-container {
-        padding: 0 24px; /* ~%20 artış (20px -> 24px) */
+        padding: 0 22px; /* %10 azalma (24px -> 22px) */
     }
     .sidebar h1 {
-        font-size: 1.7em; /* ~%20 artış (1.4em -> 1.7em) */
+        font-size: 1.5em; /* %10 azalma (1.7em -> 1.5em) */
     }
     .main-content section h2 {
-        font-size: 1.5em; /* ~%20 artış (1.25em -> 1.5em) */
+        font-size: 1.35em; /* %10 azalma (1.5em -> 1.35em) */
     }
     .project h3,
     .blog-post h3 {
-        font-size: 1.26em; /* ~%20 artış (1.05em -> 1.26em) */
+        font-size: 1.13em; /* %10 azalma (1.26em -> 1.13em) */
     }
     .social-links a {
-        font-size: 1.14em; /* ~%20 artış (0.95em -> 1.14em) */
+        font-size: 1.03em; /* %10 azalma (1.14em -> 1.03em) */
     }
 } 
